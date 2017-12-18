@@ -1,0 +1,8 @@
+body{
+    background-color: #232323;
+}
+.square{
+    /*width is 30% of Container*/
+    width: 30%;
+
+}
