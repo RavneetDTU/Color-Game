@@ -4,5 +4,16 @@ body{
 .square{
     /*width is 30% of Container*/
     width: 30%;
-
+    margin: 1.66%;
+    background-color: purple;
+    padding-bottom: 30%;
+    float: left;
+}
+#container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+h1{
+    color: white;
+    text-align: center;
 }
