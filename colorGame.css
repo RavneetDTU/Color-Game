@@ -19,5 +19,15 @@ h1{
     text-align: center;
 }
 span{
-  color: white;
+}
+#refereranceImage{
+    margin: 0 auto;
+}
+#stripe{
+    background: white;
+    height: 30px;
+    text-align: center;
+}
+.selected{
+    background: blue;
 }
