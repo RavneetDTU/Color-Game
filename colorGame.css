@@ -1,5 +1,7 @@
 body{
     background-color: #232323;
+    margin: 0;
+    font-family: "Avenir","Montserrat";
 }
 .square{
 
@@ -9,14 +11,32 @@ body{
     background-color: purple;
     padding-bottom: 30%;
     float: left;
+    border-radius: 10%;
+
+    /*For creating animations like effect */
+    transition: background 0.7s;
+
+    /*But this transition don't work in all Browsers, so we need to add browser support*/
+    /*For Saffari*/
+    -webkit-transition: background 0.7s;
+    /*For Mozila*/
+    -moz-transition: background 0.7s;
+
 }
 #container{
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 h1{
     color: white;
+    background: steelblue;
     text-align: center;
+    margin: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.1;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 span{
 }
@@ -29,5 +49,40 @@ span{
     text-align: center;
 }
 .selected{
-    background: blue;
+    background: steelblue;
+    color: white;
+}
+#colordisplay{
+    font-size: 200%;
+}
+button{
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: steelblue;
+    font-size: inherit;
+    letter-spacing: 1px;
+
+    /*Now we want that above Property take time for transition......Just like a bit animation*/
+    transition: all 0.5s;
+
+    /*But this transition don't work in all Browsers, so we need to add browser support*/
+    /*For Saffari*/
+    -webkit-transition: all 0.5s;
+    /*For Mozila*/
+    -moz-transition: all 0.5s;
+
+    /*To remove outline from buttons, it is default given by Browser*/
+    outline: none;
+}
+#message{
+    display: inline-block;
+    width: 20%;
+    text-transform: uppercase;
+}
+button:hover{
+    color: white;
+    background: steelblue;
 }

@@ -18,7 +18,7 @@ easybtn.addEventListener('click',function () {
     colors = generateRandomColor(numberOfSquares);
     // Picking a random color
     pickedColor = pickrandomColor();
-    colordisplay.textContent = pickedColor.toUpperCase();
+    colordisplay.textContent = pickedColor;
     // Changing Color of top 3 Elements
     for(var i = 0;i<squares.length;i++){
         if(colors[i]){
@@ -52,17 +52,24 @@ resetButton.addEventListener('click',function () {
     // Pick a new random Color from Array
     pickedColor = pickrandomColor();
     // change colordisplay to match picked Color
-    colordisplay.textContent = pickedColor.toUpperCase();
+    colordisplay.textContent = pickedColor;
     //change color of Squares
     for(var i = 0;i<squares.length;i++){
         squares[i].style.background = colors[i];
     }
     // Change Color of H1 Background
-    h1.style.background = "#232323";
+    h1.style.background = "#4682B4";
+
+    // Resetting Display Message to Empty
+    messageDisplay.textContent = "";
+
+    // We want that Button Should say Play Again? Only if User Wins, Than after it should be New Colors
+    this.textContent = "New Colors";
+    // We used this key word here because we are inside resetButton Code and wants to Refer this button
 
 });
 
-colordisplay.textContent = pickedColor.toUpperCase();
+colordisplay.textContent = pickedColor;
 
 for(i=0;i<squares.length;i++){
     // Adding Initial Colors to Squares
